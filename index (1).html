@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lá thư nhỏ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Georgia', serif;
+            background: linear-gradient(to bottom, #fbeee0, #f5d7d7);
+            color: #3d3d3d;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .envelope {
+            width: 120px;
+            height: 120px;
+            background-image: url('https://cdn-icons-png.flaticon.com/512/1084/1084263.png');
+            background-size: cover;
+            margin-bottom: 30px;
+        }
+        .letter {
+            max-width: 90%;
+            padding: 20px 30px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .fade-in {
+            animation: fadeIn 2s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .line {
+            margin: 16px 0;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #888;
+        }
+        audio {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="envelope fade-in"></div>
+    <div class="letter fade-in">
+        <div class="line">When you see these lines, that means my time has ended.</div>
+        <div class="line">Tuấn cũng khá bối rối và ngại ngùng khi làm cái này 👉👈,</div>
+        <div class="line">But</div>
+        <div class="line">I want you to know — your feelings have always been my priority,</div>
+        <div class="line">even in the moments I choose to stay silent.</div>
+        <div class="line">Không cần phải đáp lại gì đâu, chỉ cần Như Ý hiểu là…</div>
+        <div class="line">넌 항상 내 마음속 첫번째였어.</div>
+    </div>
+    <audio autoplay loop>
+        <source src="https://dl.dropboxusercontent.com/scl/fi/m4gkxlzv3qk4l3e0w48gr/Tinh-Co-Yeu-Em-_-Chi-Dan.mp3?rlkey=oz9uz5qlqhtij9b47fhwbs56g&st=ay6x9l1p&raw=1" type="audio/mp3">
+    </audio>
+    <div class="footer fade-in">— From Tuấn</div>
+</body>
+</html>
